@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package com.ijys.internals;
+
+option java_multiple_files = true;
+option java_package = "com.ijys.internals.lib";
+option java_outer_classname = "SimpleApiProto";
+
+service SimpleApi {
+  rpc GetSimpleData(SimpleRequest) returns (SimpleReply) {
+  }
+}
+
+message SimpleRequest {
+  string name = 1;
+}
+
+message SimpleReply {
+  int64 id = 1;
+  string data = 2;
+}

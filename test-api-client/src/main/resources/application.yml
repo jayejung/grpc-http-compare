@@ -1,0 +1,8 @@
+spring:
+  main:
+    web-application-type: none
+grpc:
+  client:
+    simpleapi:
+      address: 'static://127.0.0.1:9090'
+      negotiationtype: plaintext
